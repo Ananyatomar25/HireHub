@@ -1,4 +1,4 @@
-# Welcome to HireHub
+# Welcome to HireHub - one stop destination for finding jobs
 
 # Getting Started with Create React App
 
