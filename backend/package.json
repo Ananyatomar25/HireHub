@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon server.js"
+    "start": "npx nodemon server.js",
+    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
+    "build": "webpack --config=Scripts/config/webpack.prod.js"
   },
-  
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -27,5 +28,8 @@
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
   }
 }
