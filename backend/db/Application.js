@@ -17,11 +17,11 @@ let schema = new mongoose.Schema(
     status: {
       type: String,
       enum: [
-        "applied", // when a applicant is applied
-        "shortlisted", // when a applicant is shortlisted
-        "accepted", // when a applicant is accepted
-        "rejected", // when a applicant is rejected
-        "deleted", // when any job is deleted
+        "applied", 
+        "shortlisted", 
+        "accepted", 
+        "rejected", 
+        "deleted", 
         "cancelled", // an application is cancelled by its author or when other application is accepted
         "finished", // when job is over
       ],
@@ -56,25 +56,5 @@ let schema = new mongoose.Schema(
   { collation: { locale: "en" } }
 );
 
-// schema.virtual("applicationUser", {
-//   ref: "JobApplicantInfo",
-//   localField: "userId",
-//   foreignField: "userId",
-//   justOne: true,
-// });
-
-// schema.virtual("applicationRecruiter", {
-//   ref: "RecruiterInfo",
-//   localField: "recruiterId",
-//   foreignField: "userId",
-//   justOne: true,
-// });
-
-// schema.virtual("applicationJob", {
-//   ref: "jobs",
-//   localField: "jobId",
-//   foreignField: "_id",
-//   justOne: true,
-// });
 
 module.exports = mongoose.model("applications", schema);

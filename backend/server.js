@@ -7,6 +7,7 @@ const fs = require("fs");
 
 // MongoDB
 mongoose
+//hide mongoDB uri
   .connect("mongodb+srv://Ananya25:1234@cluster0.z2jycob.mongodb.net/test", {
     useNewUrlParser: true,
     useUnifiedTopology: true,

@@ -103,7 +103,7 @@ const ApplicationTile = (props) => {
         setOpen(false);
       })
       .catch((err) => {
-        // console.log(err.response);
+        
         console.log(err);
         setPopup({
           open: true,

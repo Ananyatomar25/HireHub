@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 require("mongoose-type-email");
 
+
 let schema = new mongoose.Schema(
   {
     email: {
